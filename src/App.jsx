@@ -1,4 +1,5 @@
 import './App.css'
+import Accordion from './components/Accordion/accordion';
 import Banner from './components/Banner/Banner';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
@@ -11,6 +12,7 @@ function App() {
     <Hero />
     <Banner />
     <Residencies />
+    <Accordion />
     </>
   )
 }

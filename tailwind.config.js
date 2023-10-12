@@ -13,6 +13,9 @@ export default {
         xl: '1200px',
         '2xl': '1400px'
       },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif']
+      }
     },
   },
   plugins: [],
