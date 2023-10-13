@@ -1,5 +1,6 @@
 import { HiLocationMarker } from 'react-icons/hi';
 import {BsPlus} from 'react-icons/bs';
+import { motion } from 'framer-motion';
 
 function Hero() {
   return (
@@ -8,11 +9,18 @@ function Hero() {
         <div className="flex justify-around items-center flex-col md:flex-row gap-[50px]">
           <div className="left flex flex-col gap-[40px]">
             <div className="hero-title relative before:content-[''] before:absolute before:w-8 before:h-8 before:rounded-full before:bg-[#ffb978] before:right-[50%] before:top-[4px] before:z-[-1]">
-              <h1 className='text-[40px] font-bold leading-[1.3]'>
-                Discover <br/>
-                Most Suitable <br/>
-                Property
-              </h1>
+              <motion.h1 
+                initial = {{y: '2rem', opacity: 0}}
+                animate = {{y: 0, opacity: 1}}
+                transition={{
+                  duration: 2,
+                  type: 'spring'
+                }}
+                className='text-[40px] font-bold leading-[1.3]'>
+                  Discover <br/>
+                  Most Suitable <br/>
+                  Property
+              </motion.h1>
             </div>
             <div className="hero-info">
               <p className='mb-[5px] text-[#8c8b8b] text-[14px]'>Find a variety of properties that suit you very easily</p>
@@ -48,9 +56,16 @@ function Hero() {
             </div>
           </div>
           <div className="right">
-            <div className="hero-img w-[350px] lg:w-[500px] h-[390px] lg:h-[560px] rounded-[240px_240px_0_0] overflow-hidden border-4 border-solid border-[#ffffff1f]">
+            <motion.div
+              initial = {{x: '7rem', opacity: 0}}
+              animate = {{x: 0, opacity: 1}}
+              transition={{
+                duration: 2,
+                type: 'spring'
+              }}
+              className="hero-img w-[350px] lg:w-[500px] h-[390px] lg:h-[560px] rounded-[240px_240px_0_0] overflow-hidden border-4 border-solid border-[#ffffff1f]">
               <img src="/images/hero.png" alt="hero-img" className="w-full h-full object-cover" />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ function Residencies() {
   }
 
   return (
-    <section className="py-12 bg-white overflow-hidden">
+    <section className="py-12 bg-white overflow-hidden" id='residencies'>
       <div className="container">
         <p className='text-[orange] text-[18px]'>Best Choices</p>
         <h2 className='text-[30px] mb-[32px] text-[#1f3e72]'>Popular Residencies</h2>

@@ -1,7 +1,7 @@
 
 function GetStarted() {
   return (
-    <section className="py-10 bg-white">
+    <section className="py-10 bg-white" id="getstarted">
       <div className="container">
         <div className="get-started bg-[#4161df] flex justify-center items-center flex-col h-[30vh]">
           <div className="get-started-info p-[10px]">

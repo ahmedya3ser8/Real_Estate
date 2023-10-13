@@ -8,7 +8,7 @@ function Accordion() {
   const [accordionTwo, setAccordionTwo] = useState(false);
   const [accordionThree, setAccordionThree] = useState(false);
   return (
-    <section className="bg-white py-12">
+    <section className="bg-white py-12" id="value">
       <div className="container">
         <div className="accordion flex justify-between flex-col lg:flex-row">
           <div className="left">
